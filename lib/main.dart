@@ -49,8 +49,7 @@ class _TelaTradutorState extends State<TelaTradutor> {
 
   void palavraAnterior() {
     setState(() {
-      indiceAtual =
-          (indiceAtual - 1 + palavras.length) % palavras.length;
+      indiceAtual = (indiceAtual - 1 + palavras.length) % palavras.length;
       mostrarTraducao = false;
     });
   }
@@ -66,27 +65,16 @@ class _TelaTradutorState extends State<TelaTradutor> {
     final palavra = palavras[indiceAtual];
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Tradutor de Palavras'),
-      ),
+      appBar: AppBar(title: const Text('Tradutor de Palavras')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              palavra['pt']!,
-              style: const TextStyle(fontSize: 40),
-            ),
+            Text(palavra['pt']!, style: const TextStyle(fontSize: 40)),
             const SizedBox(height: 20),
             if (mostrarTraducao) ...[
-              Text(
-                palavra['en']!,
-                style: const TextStyle(fontSize: 25),
-              ),
-              Text(
-                palavra['es']!,
-                style: const TextStyle(fontSize: 25),
-              ),
+              Text(palavra['en']!, style: const TextStyle(fontSize: 25)),
+              Text(palavra['es']!, style: const TextStyle(fontSize: 25)),
             ],
             const SizedBox(height: 30),
             Row(
