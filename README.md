@@ -1,17 +1,27 @@
-# tradutor_palavras
+# Tradutor de Palavras
 
-A new Flutter project.
+Aplicativo Flutter (Android) que exibe palavras em português e mostra a tradução para inglês e espanhol ao pressionar um botão. Exercício N1-E4 de Programação Mobile.
 
-## Getting Started
+## Ambiente
+- Flutter 3.48.0 (canal beta)
+- Dart 3.14.0
 
-This project is a starting point for a Flutter application.
+## Origem do código
+Código-base do exercício N1-E4 de Programação Mobile, disponibilizado e apresentado em aula pelo professor.
 
-A few resources to get you started if this is your first Flutter project:
+## Como executar
+```bash
+flutter pub get
+flutter run
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Como testar
+```bash
+dart format .
+flutter analyze
+flutter test
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Documentação
+- Plano de Gerenciamento de Configuração: `docs/PGC_Tradutor_de_Palavras.pdf`
+- Evidências de GCS: `docs/evidencias/`
